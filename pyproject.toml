@@ -47,6 +47,7 @@ managed = true
 dev-dependencies = [
     "atsphinx-bulma",
     "atsphinx-mini18n",
+    "beautifulsoup4>=4.12.3",
     "doc8",
     "esbonio",
     "mypy",
