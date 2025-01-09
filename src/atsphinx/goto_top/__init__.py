@@ -15,7 +15,7 @@ here = Path(__file__).parent
 def register_config(app: Sphinx, config: Config):
     """Add config values for using extension."""
     config.templates_path.append(str(here / "templates"))
-    config.html_static_path.append(str(here / "static"))
+    config.html_static_path.insert(0, str(here / "static"))
     config.html_js_files.append("goto-top/main.js")
     config.html_css_files.append("goto-top/style.css")
 
