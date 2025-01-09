@@ -1,0 +1,8 @@
+#gotoTop {
+  position: fixed;
+  right: 1rem;
+  opacity: 0.2;
+}
+#gotoTop:hover {
+  opacity: 1;
+}
