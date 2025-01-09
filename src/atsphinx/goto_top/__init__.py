@@ -28,10 +28,9 @@ def append_template_element(
     doctree: Optional[nodes.document],
 ) -> None:
     """Inject <template> into metadata."""
+    template = app.builder.templates.render("goto-top/navigation.html", context)
     context.setdefault("metatags", "")
-    context["metatags"] += app.builder.templates.render(
-        "goto-top/navigation.html", context
-    )
+    context["metatags"] += f'<template id="tmpl_gotoTop">{template}</template>'
 
 
 def setup(app: Sphinx):  # noqa: D103
