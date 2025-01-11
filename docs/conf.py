@@ -15,6 +15,7 @@ extensions = [
     "sphinx.ext.todo",
     # Third-party extensions
     "atsphinx.mini18n",
+    "sphinx_toolbox.confval",
     # This extension
     "atsphinx.goto_top",
 ]
@@ -58,10 +59,5 @@ mini18n_support_languages = ["en", "ja"]
 mini18n_basepath = "/goto-top/"
 
 
-def setup(app):
-    app.add_object_type(
-        "confval",
-        "confval",
-        objname="configuration value",
-        indextemplate="pair: %s; configuration value",
-    )
+html_static_path = []
+templates_path = [get_mini18n_template_dir()]
