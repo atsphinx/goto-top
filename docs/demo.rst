@@ -6,8 +6,8 @@ Demo
 
    <style>
      section section {
-       margin-top: 200px;
-       margin-bottom: 200px;
+       margin-top: 300px;
+       margin-bottom: 300px;
      }
    </style>
 
@@ -24,8 +24,8 @@ This page is written with the stylesheet:
 
       <style>
         section section {
-          margin-top: 200px;
-          margin-bottom: 200px;
+          margin-top: 300px;
+          margin-bottom: 300px;
         }
       </style>
 
@@ -39,4 +39,5 @@ This section is second part of page, but it is too far from top of page.
 Of course, you can scroll to top of page manually.
 
 Please right side of page,
-There is a button written "Back to top" and you can scroll to top easily by click it.
+There is a button image that is designed "arrow-up" and title "Back to top",
+and you can scroll to top easily by click it.
