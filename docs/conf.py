@@ -57,7 +57,8 @@ todo_include_todos = True
 mini18n_default_language = "en"
 mini18n_support_languages = ["en", "ja"]
 mini18n_basepath = "/goto-top/"
-
+# atsphinx.goto_top
+goto_top_design = "image"
 
 html_static_path = []
 templates_path = [get_mini18n_template_dir()]

@@ -6,6 +6,7 @@ from typing import Optional
 from docutils import nodes
 from sphinx.application import Sphinx
 from sphinx.config import Config
+from sphinx.util.typing import NoneType
 
 __version__ = "0.0.0"
 
@@ -19,6 +20,7 @@ def register_config(app: Sphinx, config: Config):
     config.html_js_files.append("goto-top/main.js")
     config.html_css_files.append("goto-top/style.css")
     config.html_context["goto_top"] = {
+        "design": config.goto_top_design,
         "content_id": config.goto_top_content_id,
         "template_id": config.goto_top_template_id,
         "side": config.goto_top_side,
@@ -33,7 +35,11 @@ def append_template_element(
     doctree: Optional[nodes.document],
 ) -> None:
     """Inject <template> into metadata."""
-    template = app.builder.templates.render("goto-top/navigation.html", context)
+    name = "goto-top/navigation.html"
+    if app.config.goto_top_design:
+        name = f"goto-top/navigation-{app.config.goto_top_design}.html"
+    print(name)
+    template = app.builder.templates.render(name, context)
     context.setdefault("metatags", "")
     context["metatags"] += (
         f'<template id="{app.config.goto_top_template_id}">{template}</template>'
@@ -41,6 +47,7 @@ def append_template_element(
 
 
 def setup(app: Sphinx):  # noqa: D103
+    app.add_config_value("goto_top_design", None, "env", (str, NoneType))
     app.add_config_value("goto_top_template_id", "tmpl_gotoTop", "env", str)
     app.add_config_value("goto_top_content_id", "gotoTop", "env", str)
     app.add_config_value("goto_top_side", "right", "env", str)

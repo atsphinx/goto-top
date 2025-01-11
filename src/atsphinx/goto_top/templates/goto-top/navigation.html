@@ -1,3 +1,1 @@
-<div id="{{ goto_top.content_id }}">
-  <button>Back to top</button>
-</div>
+{% include 'goto-top/navigation-' + (goto_top.design or 'text') + '.html' %}

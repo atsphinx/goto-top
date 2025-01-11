@@ -30,6 +30,20 @@ When document build, it append the button into bottom of page.
 Configuration
 =============
 
+.. confval:: goto_top_design
+   :type: string | None
+   :default: ``None``
+
+   Select design type of navigation button.
+   If this value is not ``None``, builder auto detect or use ``"text"`` preset.
+
+   Preset types:
+
+   * ``"text"``: Simple text.
+   * ``"image"``: Use SVG (arrow-up-to-line).
+
+   When this value is neither ``None`` or preset types, builder will raises error.
+
 .. confval:: goto_top_template_id
    :type: string
    :default: ``"tmpl_gotoTop"``
