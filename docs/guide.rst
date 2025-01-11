@@ -44,6 +44,12 @@ Configuration
 
    When this value is neither ``None`` or preset types, builder will raises error.
 
+.. confval:: goto_top_side
+   :type: string
+   :default: ``"right"``
+
+   This value is used as CSS property. You muse set ``"left"`` or ``"right"``
+
 .. confval:: goto_top_template_id
    :type: string
    :default: ``"tmpl_gotoTop"``
@@ -57,9 +63,3 @@ Configuration
    :default: ``"gotoTop"``
 
    You need not set it other than ID id conflicted.
-
-.. confval:: goto_top_side
-   :type: string
-   :default: ``"right"``
-
-   This value is used as CSS property. You muse set ``"left"`` or ``"right"``
