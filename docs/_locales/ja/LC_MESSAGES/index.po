@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: atsphinx-goto-top 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-09 22:23+0900\n"
+"POT-Creation-Date: 2025-01-11 18:33+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -24,15 +24,38 @@ msgstr ""
 msgid "atsphinx-goto-top"
 msgstr ""
 
-#: ../../index.rst:6
+#: ../../index.rst:15
 msgid "Overview"
-msgstr ""
+msgstr "概要"
 
-#: ../../index.rst:8
-msgid "Todo"
+#: ../../index.rst:17
+msgid ""
+"This is Sphinx-exntension to add \"Back to top\" button into every "
+"themes. Provided button is generic, user can customize with almost no "
+"limits."
 msgstr ""
+"これは「トップに戻る」ボタンをあらゆるテーマに追加可能にするSphinx拡張です。"
+"汎用的な作りをしており、カスタマイズの自由が効きます。"
 
-#: ../../index.rst:8
-msgid "Write it"
+#: ../../index.rst:20
+msgid "Prese see :doc:`demo` to experience it."
+msgstr "動作を体験したい場合は、 :doc:`demo` を参照してください。"
+
+#: ../../index.rst:23
+msgid "Concept"
+msgstr "基本コンセプト"
+
+#: ../../index.rst:25
+msgid ""
+"This extension is made for working on any themes. Therefore, this is "
+"implemented simple and users can override contents easy."
 msgstr ""
+"この拡張は「どんなテーマでも動作する」ことを意識して作っています。"
+"そのため、実装は非常に簡素ですし、利用者による上書き等も比較的用意になっています。"
+
+#~ msgid "Todo"
+#~ msgstr ""
+
+#~ msgid "Write it"
+#~ msgstr ""
 

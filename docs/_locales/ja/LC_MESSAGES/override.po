@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Kazuya Takei
+# This file is distributed under the same license as the atsphinx-goto-top
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: atsphinx-goto-top 0.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-11 18:33+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../override.rst:3
+msgid "Override resources"
+msgstr "リソースの上書き"
+
+#: ../../override.rst:5
+msgid "You can override generating resources on any projects."
+msgstr ""
+
+#: ../../override.rst:8
+msgid "Spec of default implementation"
+msgstr ""
+
+#: ../../override.rst:10
+msgid "Render ``<script>``, ``<link>`` and ``<template>`` elements."
+msgstr ""
+
+#: ../../override.rst:12
+msgid "Template is detected by ``goto_top_design`` of ``conf.py``."
+msgstr ""
+
+#: ../../override.rst:14
+msgid ""
+"``<script>`` append navigation content into document body based from "
+"``<template>``."
+msgstr ""
+
+#: ../../override.rst:15
+msgid "Browser display navigation disigned by css refered ``<link>``."
+msgstr ""
+
+#: ../../override.rst:18
+msgid "Contents guide"
+msgstr ""
+
+#: ../../override.rst:21
+msgid "Button content"
+msgstr ""
+
+#: ../../override.rst:23
+msgid ""
+"It uses ``goto-top/navigation.html`` in directory on one of "
+"``templates_path``."
+msgstr ""
+
+#: ../../override.rst:25
+msgid ""
+"If you override only it, it must include element that has attribute "
+"``id=\"{{ goto_top.content_id }}\"``."
+msgstr ""
+
+#: ../../override.rst:28
+msgid "Style of button"
+msgstr ""
+
+#: ../../override.rst:30
+msgid ""
+"It uses ``goto-top/style.css`` in directory on one of "
+"``html_static_path``."
+msgstr ""
+
+#: ../../override.rst:33
+msgid "Handler JavaScript"
+msgstr ""
+
+#: ../../override.rst:35
+msgid "It uses ``goto-top/main.js`` in directory on one of ``html_static_path``."
+msgstr ""
+

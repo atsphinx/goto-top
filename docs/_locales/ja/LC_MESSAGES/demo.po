@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Kazuya Takei
+# This file is distributed under the same license as the atsphinx-goto-top
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: atsphinx-goto-top 0.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-11 18:33+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../demo.rst:3
+msgid "Demo"
+msgstr ""
+
+#: ../../demo.rst:14
+msgid "This is demo page for behavior of ``atsphinx-goto-top``."
+msgstr "ここは、``atsphinx-goto-top`` の動作をみるためのデモページです。"
+
+#: ../../demo.rst:17
+msgid "This page is styled"
+msgstr "このページはスタイル設定されています。"
+
+#: ../../demo.rst:19
+msgid "This page is written with the stylesheet:"
+msgstr "このページ内では、下記のスタイルシート設定が記述されています。"
+
+#: ../../demo.rst:32
+msgid ""
+"Stylesheet generates long margins per sections, therefore it will be "
+"created scroll bar on almost browser window."
+msgstr ""
+"スタイルシートによって、各セクションごとに長めの縦マージンが付与されています。"
+"そのため、大半のブラウザウィンドウでスクロールバーが表示されるでしょう。"
+
+#: ../../demo.rst:36
+msgid "Next section (far!)"
+msgstr "二番目のセクション（かなり遠いはず）"
+
+#: ../../demo.rst:38
+msgid ""
+"This section is second part of page, but it is too far from top of page. "
+"Of course, you can scroll to top of page manually."
+msgstr ""
+"ここからは、ページ内の2番目のセクションですが、ページトップからはかなり遠い位置にあります。"
+"手動でトップにスクロールさせることはもちろん可能です。"
+
+#: ../../demo.rst:41
+msgid ""
+"Please right side of page, There is a button written \"Back to top\" and "
+"you can scroll to top easily by click it."
+msgstr ""
+

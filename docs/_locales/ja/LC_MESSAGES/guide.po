@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: atsphinx-goto-top 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-09 22:23+0900\n"
+"POT-Creation-Date: 2025-01-11 18:33+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -22,25 +22,71 @@ msgstr ""
 
 #: ../../guide.rst:3
 msgid "User guide"
-msgstr ""
+msgstr "利用ガイド"
 
 #: ../../guide.rst:6
 msgid "Installation"
-msgstr ""
+msgstr "インストール"
 
-#: ../../guide.rst:8 ../../guide.rst:13 ../../guide.rst:18
-msgid "Todo"
-msgstr ""
+#: ../../guide.rst:8
+msgid "You can install from PyPI."
+msgstr "PyPIからインストール可能です。"
 
-#: ../../guide.rst:8 ../../guide.rst:13 ../../guide.rst:18
-msgid "Write it"
-msgstr ""
-
-#: ../../guide.rst:11
-msgid "Usage"
-msgstr ""
+#: ../../guide.rst:10
+msgid "Example for using pip"
+msgstr "pipを使ったインストール例"
 
 #: ../../guide.rst:16
-msgid "Configuration"
+msgid "Usage"
+msgstr "使い方"
+
+#: ../../guide.rst:18
+msgid "You can use only register into your ``conf.py``."
+msgstr "``conf.py``に登録するだけで使用可能になります。"
+
+#: ../../guide.rst:20
+msgid "conf.py"
 msgstr ""
+
+#: ../../guide.rst:28
+msgid "When document build, it append the button into bottom of page."
+msgstr "ドキュメントのビルド時に、ページ下部へボタンが追加されるようになります。"
+
+#: ../../guide.rst:31
+msgid "Configuration"
+msgstr "設定"
+
+#: ../../guide.rst
+msgid "**Type:** string | None"
+msgstr ""
+
+#: ../../guide.rst
+msgid "**Default:** ``None``"
+msgstr ""
+
+#: ../../guide.rst
+msgid "**Type:** string"
+msgstr ""
+
+#: ../../guide.rst
+msgid "**Default:** ``\"right\"``"
+msgstr ""
+
+#: ../../guide.rst
+msgid "**Default:** ``\"auto\"``"
+msgstr ""
+
+#: ../../guide.rst
+msgid "**Default:** ``\"tmpl_gotoTop\"``"
+msgstr ""
+
+#: ../../guide.rst
+msgid "**Default:** ``\"gotoTop\"``"
+msgstr ""
+
+#~ msgid "Todo"
+#~ msgstr ""
+
+#~ msgid "Write it"
+#~ msgstr ""
 
