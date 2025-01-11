@@ -18,6 +18,11 @@ def register_config(app: Sphinx, config: Config):
     config.html_static_path.insert(0, str(here / "static"))
     config.html_js_files.append("goto-top/main.js")
     config.html_css_files.append("goto-top/style.css")
+    config.html_context["goto_top"] = {
+        "content_id": config.goto_top_content_id,
+        "template_id": config.goto_top_template_id,
+        "side": config.goto_top_side,
+    }
 
 
 def append_template_element(
@@ -30,10 +35,15 @@ def append_template_element(
     """Inject <template> into metadata."""
     template = app.builder.templates.render("goto-top/navigation.html", context)
     context.setdefault("metatags", "")
-    context["metatags"] += f'<template id="tmpl_gotoTop">{template}</template>'
+    context["metatags"] += (
+        f'<template id="{app.config.goto_top_template_id}">{template}</template>'
+    )
 
 
 def setup(app: Sphinx):  # noqa: D103
+    app.add_config_value("goto_top_template_id", "tmpl_gotoTop", "env", str)
+    app.add_config_value("goto_top_content_id", "gotoTop", "env", str)
+    app.add_config_value("goto_top_side", "right", "env", str)
     app.connect("config-inited", register_config)
     app.connect("html-page-context", append_template_element)
     return {
