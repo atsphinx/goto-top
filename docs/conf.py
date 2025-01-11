@@ -27,7 +27,7 @@ gettext_compact = False
 locale_dirs = ["_locales"]
 
 # -- Options for HTML output
-html_theme = "bulma-basic"
+html_theme = "furo"
 html_static_path = ["_static"]
 html_title = f"{project} v{release}"
 html_css_files = [
