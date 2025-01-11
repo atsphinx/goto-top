@@ -67,7 +67,7 @@ todo_include_todos = True
 # atsphinx.mini18n
 mini18n_default_language = "en"
 mini18n_support_languages = ["en", "ja"]
-mini18n_basepath = "/"  #  "/goto-top/"
+mini18n_basepath = "/goto-top/"
 # atsphinx.goto_top
 goto_top_design = "image"
 
