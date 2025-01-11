@@ -38,7 +38,6 @@ def append_template_element(
     name = "goto-top/navigation.html"
     if app.config.goto_top_design:
         name = f"goto-top/navigation-{app.config.goto_top_design}.html"
-    print(name)
     template = app.builder.templates.render(name, context)
     context.setdefault("metatags", "")
     context["metatags"] += (
