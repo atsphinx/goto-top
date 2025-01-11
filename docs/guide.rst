@@ -50,6 +50,14 @@ Configuration
 
    This value is used as CSS property. You muse set ``"left"`` or ``"right"``
 
+.. confval:: goto_top_scroll_behavior
+   :type: string
+   :default: ``"auto"``
+
+   Behavior value of ``window.scrollTop()`` method when button is clicked.
+
+   See it: https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo#options
+
 .. confval:: goto_top_template_id
    :type: string
    :default: ``"tmpl_gotoTop"``

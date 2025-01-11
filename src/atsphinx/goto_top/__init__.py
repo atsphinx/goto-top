@@ -21,6 +21,7 @@ def register_config(app: Sphinx, config: Config):
     config.html_css_files.append("goto-top/style.css")
     config.html_context["goto_top"] = {
         "design": config.goto_top_design,
+        "scroll_behavior": config.goto_top_scroll_behavior,
         "content_id": config.goto_top_content_id,
         "template_id": config.goto_top_template_id,
         "side": config.goto_top_side,
@@ -47,6 +48,7 @@ def append_template_element(
 
 def setup(app: Sphinx):  # noqa: D103
     app.add_config_value("goto_top_design", None, "env", (str, NoneType))
+    app.add_config_value("goto_top_scroll_behavior", "auto", "env", str)
     app.add_config_value("goto_top_template_id", "tmpl_gotoTop", "env", str)
     app.add_config_value("goto_top_content_id", "gotoTop", "env", str)
     app.add_config_value("goto_top_side", "right", "env", str)
