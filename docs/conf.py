@@ -45,6 +45,17 @@ html_theme_options = {
         },
     ],
 }
+html_sidebars = {
+    "**": [
+        "sidebar/scroll-start.html",
+        "sidebar/brand.html",
+        "mini18n/snippets/select-lang.html",
+        "sidebar/search.html",
+        "sidebar/navigation.html",
+        "sidebar/ethical-ads.html",
+        "sidebar/scroll-end.html",
+    ]
+}
 
 # -- Options for extensions
 # sphinx.ext.intersphinx
@@ -56,7 +67,7 @@ todo_include_todos = True
 # atsphinx.mini18n
 mini18n_default_language = "en"
 mini18n_support_languages = ["en", "ja"]
-mini18n_basepath = "/goto-top/"
+mini18n_basepath = "/"  #  "/goto-top/"
 # atsphinx.goto_top
 goto_top_design = "image"
 
