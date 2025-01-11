@@ -2,6 +2,16 @@
 Change logs
 ===========
 
+v0.1.1
+======
+
+:Date: 2025-01-11 (JST)
+
+Fixes
+-----
+
+* Correct version in module.
+
 v0.1.0
 ======
 

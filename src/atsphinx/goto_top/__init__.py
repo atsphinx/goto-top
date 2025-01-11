@@ -8,7 +8,7 @@ from sphinx.application import Sphinx
 from sphinx.config import Config
 from sphinx.util.typing import NoneType
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 here = Path(__file__).parent
 
