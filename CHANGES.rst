@@ -2,6 +2,16 @@
 Change logs
 ===========
 
+v0.1.2
+======
+
+:Date: 2025-01-13 (JST)
+
+Fixes
+-----
+
+* Remove codes for only typings.
+
 v0.1.1
 ======
 
