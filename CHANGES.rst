@@ -2,6 +2,16 @@
 Change logs
 ===========
 
+v0.1.4
+======
+
+:Date: 2025-01-14 (JST)
+
+Fixes
+-----
+
+* ``goto_top_design`` accepts only string type.
+
 v0.1.3
 ======
 
