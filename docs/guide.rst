@@ -31,8 +31,8 @@ Configuration
 =============
 
 .. confval:: goto_top_design
-   :type: string | None
-   :default: ``None``
+   :type: string
+   :default: ``""``
 
    Select design type of navigation button.
    If this value is not ``None``, builder auto detect or use ``"text"`` preset.
