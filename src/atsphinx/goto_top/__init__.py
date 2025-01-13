@@ -7,7 +7,7 @@ from docutils import nodes
 from sphinx.application import Sphinx
 from sphinx.config import Config
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 here = Path(__file__).parent
 

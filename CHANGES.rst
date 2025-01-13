@@ -2,6 +2,16 @@
 Change logs
 ===========
 
+v0.1.3
+======
+
+:Date: 2025-01-14 (JST)
+
+Fixes
+-----
+
+* Rename asset basename to work for old sphinx.
+
 v0.1.2
 ======
 
