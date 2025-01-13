@@ -6,7 +6,6 @@ from typing import Optional
 from docutils import nodes
 from sphinx.application import Sphinx
 from sphinx.config import Config
-from sphinx.util.typing import NoneType
 
 __version__ = "0.1.1"
 
@@ -47,7 +46,7 @@ def append_template_element(
 
 
 def setup(app: Sphinx):  # noqa: D103
-    app.add_config_value("goto_top_design", None, "env", (str, NoneType))
+    app.add_config_value("goto_top_design", None, "env", str)
     app.add_config_value("goto_top_scroll_behavior", "auto", "env", str)
     app.add_config_value("goto_top_template_id", "tmpl_gotoTop", "env", str)
     app.add_config_value("goto_top_content_id", "gotoTop", "env", str)
