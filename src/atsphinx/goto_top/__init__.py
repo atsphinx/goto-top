@@ -24,6 +24,7 @@ def register_config(app: Sphinx, config: Config):
         "content_id": config.goto_top_content_id,
         "template_id": config.goto_top_template_id,
         "side": config.goto_top_side,
+        "button_text": "Back to top",
     }
 
 
