@@ -4,11 +4,15 @@
 import logging
 from pathlib import Path
 
-import tomli
 from babel.messages.mofile import write_mo
 from babel.messages.pofile import read_po
 
 from atsphinx import goto_top  # type: ignore[import-untyped]
+
+try:
+    import tomllib  # type: ignore[import-not-found]
+except ImportError:
+    import tomli as tomllib  # type: ignore[import-not-found]
 
 ROOT = Path(__file__).parents[1]
 
@@ -26,7 +30,7 @@ def compile_catalog(lang):
 
 
 def main():  # noqa: D103
-    meta = tomli.loads((ROOT / "pyproject.toml").read_text())
+    meta = tomllib.loads((ROOT / "pyproject.toml").read_text())
     for lang in meta["tool"]["i18n"]["languages"]:
         compile_catalog(lang)
 

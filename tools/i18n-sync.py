@@ -5,12 +5,16 @@ import logging
 from copy import deepcopy
 from pathlib import Path
 
-import tomli
 from babel.messages.catalog import Catalog
 from babel.messages.extract import extract_from_dir
 from babel.messages.pofile import read_po, write_po
 
 from atsphinx import goto_top  # type: ignore[import-untyped]
+
+try:
+    import tomllib  # type: ignore[import-not-found]
+except ImportError:
+    import tomli as tomllib  # type: ignore[import-not-found]
 
 ROOT = Path(__file__).parents[1]
 
@@ -47,7 +51,7 @@ def sync_catalog(pot: Catalog, lang: str):
 
 
 def main():  # noqa: D103
-    meta = tomli.loads((ROOT / "pyproject.toml").read_text())
+    meta = tomllib.loads((ROOT / "pyproject.toml").read_text())
     project_name = meta["project"]["name"]
     project_version = meta["project"]["version"]
     current = create_pot(project_name, project_version, Path(goto_top.__file__).parent)
