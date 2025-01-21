@@ -58,6 +58,9 @@ dev-dependencies = [
     "sphinx-toolbox>=3.8.1",
 ]
 
+[tool.i18n]
+languages = ["ja"]
+
 [tool.ruff.lint]
 select = ["C90", "D", "E", "F", "I", "W"]
 

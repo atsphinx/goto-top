@@ -6,10 +6,14 @@ from typing import Optional
 from docutils import nodes
 from sphinx.application import Sphinx
 from sphinx.config import Config
+from sphinx.locale import get_translation
 
 __version__ = "0.1.4"
 
 here = Path(__file__).parent
+locale_dir = here / "locales"
+
+_ = get_translation(__name__)
 
 
 def register_config(app: Sphinx, config: Config):
@@ -24,7 +28,7 @@ def register_config(app: Sphinx, config: Config):
         "content_id": config.goto_top_content_id,
         "template_id": config.goto_top_template_id,
         "side": config.goto_top_side,
-        "button_text": "Back to top",
+        "button_text": _("Back to top"),
     }
 
 
@@ -52,6 +56,7 @@ def setup(app: Sphinx):  # noqa: D103
     app.add_config_value("goto_top_template_id", "tmpl_gotoTop", "env", str)
     app.add_config_value("goto_top_content_id", "gotoTop", "env", str)
     app.add_config_value("goto_top_side", "right", "env", str)
+    app.add_message_catalog(__name__, str(locale_dir))
     app.connect("config-inited", register_config)
     app.connect("html-page-context", append_template_element)
     return {
