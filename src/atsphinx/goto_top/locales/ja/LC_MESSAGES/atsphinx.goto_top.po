@@ -22,5 +22,5 @@ msgstr ""
 
 #: __init__.py:31
 msgid "Back to top"
-msgstr ""
+msgstr "トップへ戻る"
 
