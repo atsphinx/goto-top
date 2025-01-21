@@ -9,6 +9,7 @@ tasks:
     desc: 'Setup workspace'
     cmds:
       - 'uv sync --frozen --all-extras'
+      - '{{.RUN_PYTHON}} tools/i18n-compile.py'
       - 'lefthook install'
   verify:
     desc: 'Verify environment by all procs'
