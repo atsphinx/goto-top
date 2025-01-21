@@ -27,3 +27,15 @@ def test__ja(app: SphinxTestApp):
     assert soup.find("template", {"id": "tmpl_gotoTop"})
     template = soup.find("template", {"id": "tmpl_gotoTop"})
     assert "トップへ戻る" in template.text
+
+
+@pytest.mark.sphinx("html", confoverrides={"goto_top_text": "GOTOTOP"})
+def test__custom_text(app: SphinxTestApp):
+    """Test to pass."""
+    app.build()
+    assert (app.outdir / "_static" / "goto-top/main.js").exists()
+    assert (app.outdir / "_static" / "goto-top/style.css").exists()
+    soup = BeautifulSoup((app.outdir / "index.html").read_text(), "html.parser")
+    assert soup.find("template", {"id": "tmpl_gotoTop"})
+    template = soup.find("template", {"id": "tmpl_gotoTop"})
+    assert "GOTOTOP" in template.text

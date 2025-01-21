@@ -28,7 +28,7 @@ def register_config(app: Sphinx, config: Config):
         "content_id": config.goto_top_content_id,
         "template_id": config.goto_top_template_id,
         "side": config.goto_top_side,
-        "button_text": _("Back to top"),
+        "button_text": config.goto_top_text or _("Back to top"),
     }
 
 
@@ -56,6 +56,7 @@ def setup(app: Sphinx):  # noqa: D103
     app.add_config_value("goto_top_template_id", "tmpl_gotoTop", "env", str)
     app.add_config_value("goto_top_content_id", "gotoTop", "env", str)
     app.add_config_value("goto_top_side", "right", "env", str)
+    app.add_config_value("goto_top_text", None, "env")
     app.add_message_catalog(__name__, str(locale_dir))
     app.connect("config-inited", register_config)
     app.connect("html-page-context", append_template_element)
