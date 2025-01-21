@@ -70,6 +70,11 @@ convention = "pep257"
 [tool.hatch.metadata]
 allow-direct-references = true
 
+[tool.hatch.build]
+artifacts = [
+    "src/atsphinx/goto_top/locales/**/*.mo",
+]
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/atsphinx"]
 only-includes = ["src/atsphinx"]

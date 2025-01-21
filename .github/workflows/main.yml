@@ -69,5 +69,5 @@ jobs:
       - uses: jdx/mise-action@v2
       - name: 'Try building as package'
         run: |
-          uv build
+          task build
           ls -l dist
