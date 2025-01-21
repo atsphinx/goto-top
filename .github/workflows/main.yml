@@ -50,6 +50,7 @@ jobs:
         if: ${{ matrix.workspace == 'latest'}}
       - name: 'Run tests'
         run: |
+          uv run tools/i18n-compile.py
           uv run pytest
   docs-test:
     runs-on: ubuntu-latest
@@ -59,6 +60,7 @@ jobs:
       - name: 'Configure dependencies'
         run: |
           uv sync --frozen --all-extras
+          uv run tools/i18n-compile.py
       - name: 'Run tests'
         run: |
           task setup docs:build-linkcheck docs:build-dirhtml

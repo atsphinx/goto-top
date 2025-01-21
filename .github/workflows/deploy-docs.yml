@@ -23,6 +23,7 @@ jobs:
           uv sync --frozen --all-extras
       - name: 'Build document'
         run: |
+          uv run tools/i18n-compile.py
           task setup docs:build
       - name: 'Upload artifact'
         uses: actions/upload-pages-artifact@v3
