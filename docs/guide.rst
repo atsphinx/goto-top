@@ -44,6 +44,17 @@ Configuration
 
    When this value is neither ``None`` or preset types, builder will raises error.
 
+.. confval:: goto_top_text
+   :type: string or None
+   :default: ``None``
+
+   This value is used as text value of built-in button.
+
+   * ``goto_top_design == "text"``: Body text of button.
+   * ``goto_top_design == "image"``: Alternation texts of button.
+
+   If this value is not set, extension will render "Back to top" or translated text.
+
 .. confval:: goto_top_side
    :type: string
    :default: ``"right"``
