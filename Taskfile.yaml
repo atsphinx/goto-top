@@ -9,6 +9,7 @@ tasks:
     desc: 'Setup workspace'
     cmds:
       - 'uv sync --frozen --all-extras'
+      - '{{.RUN_PYTHON}} tools/i18n-compile.py'
       - 'lefthook install'
   verify:
     desc: 'Verify environment by all procs'
@@ -18,6 +19,11 @@ tasks:
       - task: 'docs:intl'
       - task: 'docs:build-linkcheck'
       - task: 'docs:build-dirhtml'
+      - 'uv build'
+  build:
+    desc: 'Build as python project wheel'
+    cmds:
+      - '{{.RUN_PYTHON}} tools/i18n-compile.py'
       - 'uv build'
   release-*:
     desc: 'Run release process'
