@@ -1,3 +1,3 @@
-Release atsphinx-goto-top v0.1.4
+Release atsphinx-goto-top v0.2.0
 
-- Changelog is https://github.com/atsphinx/goto-top/blob/v0.1.4/CHANGES.rst
+- Changelog is https://github.com/atsphinx/goto-top/blob/v0.2.0/CHANGES.rst

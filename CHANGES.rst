@@ -2,6 +2,21 @@
 Change logs
 ===========
 
+v0.2.0
+======
+
+:Date: 2025-01-22 (JST)
+
+Features
+--------
+
+* Add ``goto_top_text`` to manage button-text by user.
+
+Others
+------
+
+* Support i18n for button-text.
+
 v0.1.4
 ======
 

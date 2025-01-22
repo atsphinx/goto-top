@@ -8,7 +8,7 @@ from sphinx.application import Sphinx
 from sphinx.config import Config
 from sphinx.locale import get_translation
 
-__version__ = "0.1.4"
+__version__ = "0.2.0"
 
 here = Path(__file__).parent
 locale_dir = here / "locales"
